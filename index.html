@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- nav  -->
+    <header class='bg-white px-10 py-3  
+    tracking-wide relative '>
+        <div class='flex flex-wrap items-center max-xl:gap-y-6 max-sm:gap-x-4'>
+            <a href="javascript:void(0)" class="text-3xl md:text-md font-bold text-[#4E2FDA] tracking-wide">
+                <div class="flex items-center gap-2">
+                    <img src="img/logo.png" alt="logo" class="w-10 h-10">
+                    
+                </div>
+            </a>
+
+            <div id="collapseMenu"
+                class="max-xl:hidden xl:!flex xl:items-center max-xl:before:fixed max-xl:before:bg-black max-xl:before:opacity-40 max-xl:before:inset-0 max-xl:before:z-50">
+                <button id="toggleClose" class='xl:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+                        <path
+                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                            data-original="#000000"></path>
+                        <path
+                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                            data-original="#000000"></path>
+                    </svg>
+                </button>
+
+                <ul
+                    class='xl:flex xl:gap-x-10 xl:absolute xl:left-1/2 xl:-translate-x-1/2 max-xl:space-y-3 max-xl:fixed max-xl:bg-white max-xl:w-2/3 max-xl:min-w-[300px] max-xl:top-0 max-xl:left-0 max-xl:px-10 max-xl:py-4 max-xl:h-full max-xl:shadow-md max-xl:overflow-auto z-50'>
+
+
+                    <li class='flex flex-shrink max-xl:border-b max-xl:py-3'>
+                        <a href='#about' class='text-[#090b0e] hover:text-[#4E2FDA]  text-[15px]  block font-bold'>
+                            About</a>
+                    </li>
+                    <li class='flex flex-shrink max-xl:border-b max-xl:py-3'>
+                        <a href="#services" class='text-[#090b0e] hover:text-[#4E2FDA] text-[15px] block font-bold'>
+                            Services
+                        </a>
+                    </li>
+                    <li class='flex flex-shrink max-xl:border-b max-xl:py-3'><a href='#seo-solution'
+                            class='text-[#090b0e] hover:text-[#4E2FDA] text-[15px]  block font-bold'>SEO-Solution</a>
+                    </li>
+                    <li class='flex flex-shrink max-xl:border-b max-xl:py-3'><a href='#price'
+                            class='text-[#090b0e] hover:text-[#4E2FDA] text-[15px]  block font-bold'>Price</a>
+                    </li>
+                    <li class='flex flex-shrink max-xl:border-b max-xl:py-3'><a href='#testimonials'
+                            class='text-[#090b0e] hover:text-[#4E2FDA] text-[15px]  block font-bold'>Testimonials</a>
+                    </li>
+                    <li class='flex flex-shrink max-xl:border-b max-xl:py-3'><a href='#blogs'
+                            class='text-[#090b0e] hover:text-[#4E2FDA] text-[15px]  block font-bold'>Blogs</a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class='flex items-center ml-auto space-x-8'>
+
+                <div
+                class="w-60 border-2 border-[#131987] focus-within:border-[#131987] text-[#131987] focus-within:bg-transparent flex items-center gap-1 px-3 h-10 mx-auto">
+                
+                <input type='email' placeholder='Find Your Result'
+                    class="w-4/5 outline-none bg-transparent text-green-500 font-semibold text-xl placeholder:text-[#131987]" />
+                    
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.04938 16.5928C9.837 16.5928 11.5735 15.9963 12.9838 14.8977L18.3045 20.2191C18.7019 20.603 19.3353 20.592 19.7192 20.1945C20.0936 19.8067 20.0936 19.1919 19.7192 18.8042L14.3985 13.4828C17.1243 9.97344 16.4895 4.91858 12.9807 2.19241C9.47196 -0.533763 4.41791 0.101068 1.69215 3.61039C-1.03361 7.11971 -0.398872 12.1746 3.10992 14.9007C4.52253 15.9983 6.2606 16.5937 8.04938 16.5928ZM3.77429 4.27179C6.13538 1.9103 9.96347 1.91025 12.3246 4.2717C14.6857 6.63315 14.6858 10.4618 12.3247 12.8233C9.9636 15.1848 6.13551 15.1848 3.77438 12.8234C1.41329 10.4792 1.39929 6.66436 3.74318 4.30291L3.77429 4.27179Z" fill="#131889"/>
+                    </svg>
+                    
+            </div>
+                <button id="toggleOpen" class='xl:hidden'>
+                    <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <!-- hero  -->
+        <section class="container mx-auto hero h-screen w-full flex items-center px-20 relative">
+            <div class="absolute lg:w-[700px] sm:w-[500px] w-60 h-40 z-10 shadow-2xl shadow-[#008738] bg-[#008738] opacity-90 blur-lg mix-blend-darken">
+               
+            </div>
+            <div class="flex items-center lg:max-w-3xl max-w-[100%] z-20 blur-none">
+                <div class="text-center lg:text-left space-y-4">
+                    <h2 class="text-[#FFFFFF]
+                  font-light lg:text-6xl md:text-3xl text-xl z-20 blur-none">
+    
+                        Empowering Rural Physicians for <span class="font-semibold">Healthier Communities</span></h2>
+                    <p class="lg:text-3xl sm:text-xl text-base text-[#FFFFFF] font-normal"> Quality Training for Rural Health Practitioners.
+                    </p>
+                    <div class="flex items-center justify-center lg:justify-start">
+                        <button
+                            class="flex items-center p-3 bg-[#131889] text-white font-semibold sm:text-xl text-base hover:bg-black transition duration-200 hover:animate-bounce shadow-2xl shadow-[#008738] shadow-blur-[300px]">
+                            <span class=""> <a href="https://www.lipsum.com/">Registration Now</a></span>
+    
+                        </button>
+                       
+                    </div>
+                   
+                </div>
+    
+            </div>
+           
+        </section>
+
+        <!-- Progress-->
+    <section class="container mx-auto lg:px-20 sm:px-10 px-5 my-20">
+        <div class="container mx-auto px-4">
+         
+          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-3 gap-10 items-center">
+  
+            <div class="xl:space-y-8 space-y-4 md:text-start text-center">
+                <h2 class="text-[#505058] text-2xl md:text-3xl xl:text-5xl font-light">
+                    Your Course <span class="font-bold">Progress and Results</span> 
+                  </h2>
+              <p class="xl:text-2xl md:text-xl font-normal text-[#70707B] md:text-left text-center">
+                We focus on equipping you with real-world skills through hands-on training, preparing you to handle various health challenges.
+              </p>
+              <div class="flex items-center md:justify-start justify-center">
+                <button
+                    class="flex items-center p-3 bg-[#131889] text-white font-semibold sm:text-xl text-base hover:bg-black transition duration-200 hover:animate-bounce shadow-2xl shadow-[#008738] shadow-blur-[300px]">
+                    <span class=""> <a href="https://www.lipsum.com/">Find Your Result</a></span>
+
+                </button>
+               
+            </div>
+              
+            </div>
+            <div >
+                <img src="img/home_2nd_image1.jpg" alt="Image" class="w-full h-full md:h-72 lg:h-auto ">
+              </div>
+  
+          </div>
+        </div>
+      </section>
+
+        <div class="container mx-auto px-5 py-2">
+            <div class="-m-1 flex flex-wrap md:-m-2">
+                <div class="flex w-1/2 flex-wrap">
+                    <div class="w-1/2 p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />
+                    </div>
+                    <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
+                    </div>
+                </div>
+                <div class="flex w-1/2 flex-wrap">
+                    <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" />
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" />
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+    <footer>
+       
+    </footer>
+    <script src="nav/nav.js"></script>
+</body>
+
+</html>
